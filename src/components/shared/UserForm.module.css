@@ -1,0 +1,126 @@
+.container{
+    z-index: 1000;
+    padding: 15px 20px;
+    background-color: #020B1F;
+    border: 1px solid #182040;
+    border-radius: 15px;
+    width: 350px;
+    filter: drop-shadow( 24px  24px  96px  #0C132C);
+}
+.title{
+    border-bottom: 1px solid #182040;
+    color: #FBFDFE;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+.closeModal{
+    margin-left:8px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.closeModal img{
+    width: 12px;
+}
+.formBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.avatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #0559FD;
+    padding: 15px;
+    margin: 15px 0 0;
+}
+.fixedAvatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #0559FD;
+    padding: 2px;
+    margin: 15px 0 0;
+}
+.form div{
+    margin: 8px 0;
+}
+.form div label{
+    display: block;
+    color: #7E848E;
+    margin-bottom: 8px;
+    font-size: small;
+}
+.form div input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #182040;
+    color: white;
+    width: 100%;
+    transition: all ease 0.5s;
+    outline: none;
+}
+.form div input:focus{
+    box-shadow: 0 0 5px #0559FD;
+}
+.col_6{
+    padding: 0 3px;
+    display: inline-block;
+    width: 50%;
+}
+.col_3{
+    padding: 0 3px;
+    display: inline-block;
+    width: 25%;
+}
+.col_12{
+    padding: 0 3px;
+    width: 100%;
+}
+.formActions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 !important;
+}
+.edit{
+    width: 48%;
+    background-color: #0559FD;
+    filter: drop-shadow(0 0 2px #033699);
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all ease 0.5s;
+}
+.cancel{
+    width: 48%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 15px;
+    color: #0559FD;
+    outline: none;
+    transition: all ease 0.5s;
+    border: 2px solid #0559FD;
+}
+.edit:active , .cancel:active{
+    filter: drop-shadow(0 0 24px #033699);
+}
+.delete{
+    width: 48%;
+    background-color: #FF3231;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all ease 0.5s;
+}
+.delete:active{
+    filter: drop-shadow(0 0 24px #b32625);
+}

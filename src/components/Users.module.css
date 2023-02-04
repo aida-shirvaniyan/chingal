@@ -1,0 +1,169 @@
+.main {
+    background-color: #021335;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #020B1F;
+    height: calc(100vh - 70px);
+    width: 95vw;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #182040;
+}
+
+.Search {
+    background: linear-gradient(200.68deg, #020B1F 0%, #0C132C 82.07%);
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border-radius: 14px;
+    padding: 5px 30px;
+    border: 1px solid #182040;
+    caret-color: #7E848E;
+    color: white;
+}
+
+.Search::placeholder {
+    color: #a9aeb7;
+}
+
+.header div img {
+    width: 16px;
+    position: absolute;
+    margin: 10px 10px 0 0;
+}
+
+.body {
+    background-image: url("../assets/noise.png");
+    min-height: 78vh;
+    padding: 0  25px 20px;
+}
+.Actions{
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Add {
+    position: absolute;
+    left: 0;
+    background-color: #0559FD;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    transition: all ease 0.5s;
+}
+
+.Add:active {
+    filter: drop-shadow(0 0 24px #033699);
+}
+
+.Add:hover {
+    box-shadow: 0 0 10px #0559FD;
+}
+
+.tableContainer {
+    border: 1px solid #182040;
+    border-radius: 15px;
+}
+
+.table {
+    background-color: transparent;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    border-style: hidden;
+    margin: 15px 0;
+}
+
+.table thead {
+    position: relative;
+    border-bottom: 1px solid #182040;
+}
+
+.table thead tr {
+    display: block;
+    position: relative;
+    padding: 8px 0;
+}
+
+.table thead tr th {
+    text-align: center;
+    color: #7E848E;
+}
+
+.table thead tr th:first-child, .table tbody tr td:first-child {
+    width: 150px;
+}
+
+.table thead tr th, .table tbody tr td {
+    width: 300px;
+}
+
+.table tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 55vh;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #fff, #000, #fff) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 80%;
+    animation: shine 2s linear infinite;
+    position: relative;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+.table tbody tr {
+    height: 50px;
+    text-align: center;
+    color: #C4D4EC;
+}
+
+.table tbody tr td img {
+    border-radius: 50%;
+    width: 30px;
+}
+
+.table tbody tr td {
+    border-left: 1px solid #182040;
+    border-bottom: 1px solid #182040;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #0C132C;
+}
+
+.userLink {
+    color: #C4D4EC;
+    text-decoration: none;
+}

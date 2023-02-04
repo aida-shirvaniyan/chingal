@@ -1,0 +1,30 @@
+.BreadcrumbTable{
+    position: absolute;
+    right: 0;
+}
+.BreadcrumbForm{
+    position: absolute;
+    right: 60px;
+    top: 150px
+}
+a{
+    text-decoration: none;
+}
+.PrevRoute:before{
+    content: "\203A";
+    color: #646363;
+    margin-left:5px ;
+}
+.PrevRoute{
+     color: #646363;
+ }
+.CurrentRoute:before{
+    content: "\203A";
+    color: white;
+    margin-left:5px ;
+}
+
+.CurrentRoute{
+    color: white;
+
+}
